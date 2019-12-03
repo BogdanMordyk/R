@@ -24,6 +24,6 @@ axes <- ggplot(
   mapping = aes(x = date, ymax = off_time, ymin = on_time))
 
 axes + geom_ribbon() + labs(
-  title = "Ãðàôèê âêëþ÷åíèÿ è âûêëþ÷åíèÿ ñâåòà") + scale_y_datetime(
-    name = "Âðåìÿ", labels = function(x) {
-    substr(x, 12, 21)}) + scale_x_date(name = "Äàòà")
+  title = "График включения и выключения света") + scale_y_datetime(
+    name = "Время", labels = function(x) {
+    substr(x, 12, 21)}) + scale_x_date(name = "Дата")
