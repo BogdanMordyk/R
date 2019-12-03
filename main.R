@@ -1,3 +1,5 @@
+#authors: Kolupaev Vsevolod, Mordyk Bogdan
+
 library("ggplot2")
 library("httr")
 
@@ -22,6 +24,6 @@ axes <- ggplot(
   mapping = aes(x = date, ymax = off_time, ymin = on_time))
 
 axes + geom_ribbon() + labs(
-  title = "Ãðàôèê âêëþ÷åíèÿ è âûêëþ÷åíèÿ ñâåòà") + scale_y_datetime(
-    name = "Âðåìÿ", labels = function(x) {
-    substr(x, 12, 21)}) + scale_x_date(name = "Äàòà")
+  title = "ÃƒÃ°Ã Ã´Ã¨Ãª Ã¢ÃªÃ«Ã¾Ã·Ã¥Ã­Ã¨Ã¿ Ã¨ Ã¢Ã»ÃªÃ«Ã¾Ã·Ã¥Ã­Ã¨Ã¿ Ã±Ã¢Ã¥Ã²Ã ") + scale_y_datetime(
+    name = "Ã‚Ã°Ã¥Ã¬Ã¿", labels = function(x) {
+    substr(x, 12, 21)}) + scale_x_date(name = "Ã„Ã Ã²Ã ")
